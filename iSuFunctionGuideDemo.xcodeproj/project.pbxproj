@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C067141025383D250019D663 /* functionArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C067140F25383D250019D663 /* functionArrow.png */; };
 		C067141625383EC30019D663 /* NSObject+iSuGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = C067141525383EC30019D663 /* NSObject+iSuGuide.m */; };
+		C06A20BE253D82BA007111F7 /* iSuFunctionGuide.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C06A20BD253D82BA007111F7 /* iSuFunctionGuide.bundle */; };
+		C06A20C1253D8676007111F7 /* UIImage+iSuFunctionGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */; };
+		C06A20C5253D8DB4007111F7 /* iSuResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C06A20C4253D8DB4007111F7 /* iSuResourceManager.m */; };
 		C08F22DA25232ADB00710325 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C08F22D925232ADB00710325 /* AppDelegate.m */; };
 		C08F22DD25232ADB00710325 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C08F22DC25232ADB00710325 /* SceneDelegate.m */; };
 		C08F22E025232ADB00710325 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08F22DF25232ADB00710325 /* ViewController.m */; };
@@ -39,9 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C067140F25383D250019D663 /* functionArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = functionArrow.png; sourceTree = "<group>"; };
 		C067141425383EC30019D663 /* NSObject+iSuGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+iSuGuide.h"; sourceTree = "<group>"; };
 		C067141525383EC30019D663 /* NSObject+iSuGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+iSuGuide.m"; sourceTree = "<group>"; };
+		C06A20BD253D82BA007111F7 /* iSuFunctionGuide.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSuFunctionGuide.bundle; sourceTree = "<group>"; };
+		C06A20BF253D8676007111F7 /* UIImage+iSuFunctionGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+iSuFunctionGuide.h"; sourceTree = "<group>"; };
+		C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+iSuFunctionGuide.m"; sourceTree = "<group>"; };
+		C06A20C3253D8DB4007111F7 /* iSuResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSuResourceManager.h; sourceTree = "<group>"; };
+		C06A20C4253D8DB4007111F7 /* iSuResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSuResourceManager.m; sourceTree = "<group>"; };
 		C08F22D525232ADB00710325 /* iSuFunctionGuideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSuFunctionGuideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08F22D825232ADB00710325 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C08F22D925232ADB00710325 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,9 +98,17 @@
 		C067140E25383B4B0019D663 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C067140F25383D250019D663 /* functionArrow.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		C06A20C2253D8C12007111F7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C06A20C3253D8DB4007111F7 /* iSuResourceManager.h */,
+				C06A20C4253D8DB4007111F7 /* iSuResourceManager.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C08F22CC25232ADB00710325 = {
@@ -138,6 +152,8 @@
 		C08F23172523383600710325 /* iSuFunctionGuide */ = {
 			isa = PBXGroup;
 			children = (
+				C06A20C2253D8C12007111F7 /* Helper */,
+				C06A20BD253D82BA007111F7 /* iSuFunctionGuide.bundle */,
 				C08F231C2523383600710325 /* iSuGuideView.h */,
 				C08F231A2523383600710325 /* iSuGuideView.m */,
 				C08F23182523383600710325 /* iSuGuideSubMaskView.h */,
@@ -146,6 +162,8 @@
 				C08F231D2523383600710325 /* iSuGuideDisplayModel.m */,
 				C067141425383EC30019D663 /* NSObject+iSuGuide.h */,
 				C067141525383EC30019D663 /* NSObject+iSuGuide.m */,
+				C06A20BF253D8676007111F7 /* UIImage+iSuFunctionGuide.h */,
+				C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */,
 			);
 			path = iSuFunctionGuide;
 			sourceTree = "<group>";
@@ -253,8 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06A20BE253D82BA007111F7 /* iSuFunctionGuide.bundle in Resources */,
 				C08F22E825232ADE00710325 /* LaunchScreen.storyboard in Resources */,
-				C067141025383D250019D663 /* functionArrow.png in Resources */,
 				C08F22E525232ADE00710325 /* Assets.xcassets in Resources */,
 				C08F22E325232ADB00710325 /* Main.storyboard in Resources */,
 			);
@@ -284,9 +302,11 @@
 				C067141625383EC30019D663 /* NSObject+iSuGuide.m in Sources */,
 				C08F22E025232ADB00710325 /* ViewController.m in Sources */,
 				C08F231E2523383600710325 /* iSuGuideView.m in Sources */,
+				C06A20C5253D8DB4007111F7 /* iSuResourceManager.m in Sources */,
 				C08F23202523383600710325 /* iSuGuideDisplayModel.m in Sources */,
 				C08F22DA25232ADB00710325 /* AppDelegate.m in Sources */,
 				C08F22EB25232ADE00710325 /* main.m in Sources */,
+				C06A20C1253D8676007111F7 /* UIImage+iSuFunctionGuide.m in Sources */,
 				C08F231F2523383600710325 /* iSuGuideSubMaskView.m in Sources */,
 				C08F22DD25232ADB00710325 /* SceneDelegate.m in Sources */,
 			);
@@ -458,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PB2NCPGD6;
 				INFOPLIST_FILE = iSuFunctionGuideDemo/Info.plist;
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +487,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iSuAbner.iSuFunctionGuideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -477,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PB2NCPGD6;
 				INFOPLIST_FILE = iSuFunctionGuideDemo/Info.plist;
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,6 +508,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iSuAbner.iSuFunctionGuideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

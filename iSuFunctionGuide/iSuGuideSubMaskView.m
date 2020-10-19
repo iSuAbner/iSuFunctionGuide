@@ -11,6 +11,12 @@
 //Modle
 #import "iSuGuideDisplayModel.h"
 
+//Category
+#import "UIImage+iSuFunctionGuide.h"
+
+//Helper
+#import "iSuResourceManager.h"
+
 @interface iSuGuideSubMaskView()
 
 @property (nonatomic, strong) UIImageView *explainImageV;
@@ -51,8 +57,9 @@
     [self addSubview:self.explainImageV];
     [self addSubview:self.operationImageV];
     
-    self.explainImageV.image = [UIImage imageNamed:self.model.explainImageName];
-    self.operationImageV.image = [UIImage imageNamed:self.model.operationImageName];
+    //FIXME: 很不灵活
+    self.explainImageV.image = [UIImage isu_imageNamed:self.model.explainImageName bundle:iSuDefaultBundle()];
+    self.operationImageV.image = [UIImage isu_imageNamed:self.model.operationImageName bundle:iSuDefaultBundle()];
 }
 
 - (void)drawAlphaArea{
