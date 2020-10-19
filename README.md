@@ -1,2 +1,0 @@
-# iSuFunctionGuide
-Function of guiding 
