@@ -14,9 +14,8 @@ NSBundle *iSuDefaultBundle(void){
     static NSBundle *bundle = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        //NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(@"iSuFunctionGuide")];
-        NSBundle *bundle = [NSBundle mainBundle];
-        NSString *path = [bundle pathForResource:@"iSuFunctionGuide" ofType:@"bundle"];
+        NSBundle *_bundle = [NSBundle bundleForClass:NSClassFromString(@"iSuFunctionGuide")];
+        NSString *path = [_bundle pathForResource:@"iSuFunctionGuide" ofType:@"bundle"];
         bundle = [NSBundle bundleWithPath:path];
     });
     return bundle;
