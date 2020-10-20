@@ -18,8 +18,6 @@
 
 + (instancetype)isu_imageNamed:(NSString *)name bundle:(NSBundle *)bundle{
     
-    //参考YBImageBrowserDemo ybib_imageNamed 分类方法.
-    
     if (name.length == 0) return nil;
     if ([name hasSuffix:@"/"]) return nil;
     
