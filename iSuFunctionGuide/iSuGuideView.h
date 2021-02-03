@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#import "iSuFGDataProtocol.h"
+#import "iSuFunctionGuideDelegate.h"
+#import "iSuFunctionGuideDataSource.h"
+
 @class iSuGuideDisplayModel;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -26,6 +31,20 @@ NS_ASSUME_NONNULL_BEGIN
 // TODO: 填写当前功能引导代码对应的版本号 控制是否在当前版本显示
 /// 当前功能引导代码对应版本
 + (NSString *)currentGuideVersion;
+
+///*************************************************************************   调整框架为protocol连接数据   *************************************************************************
+@property (nonatomic, copy) NSArray<id<iSuFGDataProtocol>> *dataSourceArray;
+
+@property (nonatomic, weak) id<iSuFunctionGuideDataSource> dataSource;
+
+@property (nonatomic, weak) id <iSuFunctionGuideDelegate> delegate;
+
+/**
+   功能引导器展示
+ */
+- (void)show;
+- (void)showToView:(UIView *)view;
+
 
 @end
 
