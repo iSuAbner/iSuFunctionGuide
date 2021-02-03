@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C067141625383EC30019D663 /* NSObject+iSuGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = C067141525383EC30019D663 /* NSObject+iSuGuide.m */; };
+		C06974C92540162D005CC2F4 /* NSArray+iSuFunctionGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = C06974C82540162D005CC2F4 /* NSArray+iSuFunctionGuide.m */; };
+		C06974CD25401786005CC2F4 /* NSObject+iSuFunctionGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = C06974CC25401786005CC2F4 /* NSObject+iSuFunctionGuide.m */; };
+		C06974D2254032CF005CC2F4 /* iSuFGSubMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = C06974D1254032CF005CC2F4 /* iSuFGSubMaskView.m */; };
 		C06A20BE253D82BA007111F7 /* iSuFunctionGuide.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C06A20BD253D82BA007111F7 /* iSuFunctionGuide.bundle */; };
 		C06A20C1253D8676007111F7 /* UIImage+iSuFunctionGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */; };
 		C06A20C5253D8DB4007111F7 /* iSuResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C06A20C4253D8DB4007111F7 /* iSuResourceManager.m */; };
@@ -43,6 +46,16 @@
 /* Begin PBXFileReference section */
 		C067141425383EC30019D663 /* NSObject+iSuGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+iSuGuide.h"; sourceTree = "<group>"; };
 		C067141525383EC30019D663 /* NSObject+iSuGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+iSuGuide.m"; sourceTree = "<group>"; };
+		C06974C3253FD8AF005CC2F4 /* iSuFunctionGuideDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSuFunctionGuideDataSource.h; sourceTree = "<group>"; };
+		C06974C4253FD8CA005CC2F4 /* iSuFunctionGuideDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSuFunctionGuideDelegate.h; sourceTree = "<group>"; };
+		C06974C6253FDDBB005CC2F4 /* iSuFGDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSuFGDataProtocol.h; sourceTree = "<group>"; };
+		C06974C72540162D005CC2F4 /* NSArray+iSuFunctionGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+iSuFunctionGuide.h"; sourceTree = "<group>"; };
+		C06974C82540162D005CC2F4 /* NSArray+iSuFunctionGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+iSuFunctionGuide.m"; sourceTree = "<group>"; };
+		C06974CB25401786005CC2F4 /* NSObject+iSuFunctionGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+iSuFunctionGuide.h"; sourceTree = "<group>"; };
+		C06974CC25401786005CC2F4 /* NSObject+iSuFunctionGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+iSuFunctionGuide.m"; sourceTree = "<group>"; };
+		C06974CE25402115005CC2F4 /* iSuFGViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSuFGViewProtocol.h; sourceTree = "<group>"; };
+		C06974D0254032CF005CC2F4 /* iSuFGSubMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSuFGSubMaskView.h; sourceTree = "<group>"; };
+		C06974D1254032CF005CC2F4 /* iSuFGSubMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSuFGSubMaskView.m; sourceTree = "<group>"; };
 		C06A20BD253D82BA007111F7 /* iSuFunctionGuide.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSuFunctionGuide.bundle; sourceTree = "<group>"; };
 		C06A20BF253D8676007111F7 /* UIImage+iSuFunctionGuide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+iSuFunctionGuide.h"; sourceTree = "<group>"; };
 		C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+iSuFunctionGuide.m"; sourceTree = "<group>"; };
@@ -102,6 +115,41 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		C06974C2253FD866005CC2F4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C06974C3253FD8AF005CC2F4 /* iSuFunctionGuideDataSource.h */,
+				C06974C4253FD8CA005CC2F4 /* iSuFunctionGuideDelegate.h */,
+				C06974CE25402115005CC2F4 /* iSuFGViewProtocol.h */,
+				C06974C6253FDDBB005CC2F4 /* iSuFGDataProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C06974CA25401761005CC2F4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C067141425383EC30019D663 /* NSObject+iSuGuide.h */,
+				C067141525383EC30019D663 /* NSObject+iSuGuide.m */,
+				C06A20BF253D8676007111F7 /* UIImage+iSuFunctionGuide.h */,
+				C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */,
+				C06974C72540162D005CC2F4 /* NSArray+iSuFunctionGuide.h */,
+				C06974C82540162D005CC2F4 /* NSArray+iSuFunctionGuide.m */,
+				C06974CB25401786005CC2F4 /* NSObject+iSuFunctionGuide.h */,
+				C06974CC25401786005CC2F4 /* NSObject+iSuFunctionGuide.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C06974CF254032A8005CC2F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C06974D0254032CF005CC2F4 /* iSuFGSubMaskView.h */,
+				C06974D1254032CF005CC2F4 /* iSuFGSubMaskView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C06A20C2253D8C12007111F7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +200,9 @@
 		C08F23172523383600710325 /* iSuFunctionGuide */ = {
 			isa = PBXGroup;
 			children = (
+				C06974CF254032A8005CC2F4 /* View */,
+				C06974CA25401761005CC2F4 /* Category */,
+				C06974C2253FD866005CC2F4 /* Protocol */,
 				C06A20C2253D8C12007111F7 /* Helper */,
 				C06A20BD253D82BA007111F7 /* iSuFunctionGuide.bundle */,
 				C08F231C2523383600710325 /* iSuGuideView.h */,
@@ -160,10 +211,6 @@
 				C08F231B2523383600710325 /* iSuGuideSubMaskView.m */,
 				C08F23192523383600710325 /* iSuGuideDisplayModel.h */,
 				C08F231D2523383600710325 /* iSuGuideDisplayModel.m */,
-				C067141425383EC30019D663 /* NSObject+iSuGuide.h */,
-				C067141525383EC30019D663 /* NSObject+iSuGuide.m */,
-				C06A20BF253D8676007111F7 /* UIImage+iSuFunctionGuide.h */,
-				C06A20C0253D8676007111F7 /* UIImage+iSuFunctionGuide.m */,
 			);
 			path = iSuFunctionGuide;
 			sourceTree = "<group>";
@@ -301,11 +348,14 @@
 			files = (
 				C067141625383EC30019D663 /* NSObject+iSuGuide.m in Sources */,
 				C08F22E025232ADB00710325 /* ViewController.m in Sources */,
+				C06974CD25401786005CC2F4 /* NSObject+iSuFunctionGuide.m in Sources */,
+				C06974C92540162D005CC2F4 /* NSArray+iSuFunctionGuide.m in Sources */,
 				C08F231E2523383600710325 /* iSuGuideView.m in Sources */,
 				C06A20C5253D8DB4007111F7 /* iSuResourceManager.m in Sources */,
 				C08F23202523383600710325 /* iSuGuideDisplayModel.m in Sources */,
 				C08F22DA25232ADB00710325 /* AppDelegate.m in Sources */,
 				C08F22EB25232ADE00710325 /* main.m in Sources */,
+				C06974D2254032CF005CC2F4 /* iSuFGSubMaskView.m in Sources */,
 				C06A20C1253D8676007111F7 /* UIImage+iSuFunctionGuide.m in Sources */,
 				C08F231F2523383600710325 /* iSuGuideSubMaskView.m in Sources */,
 				C08F22DD25232ADB00710325 /* SceneDelegate.m in Sources */,
