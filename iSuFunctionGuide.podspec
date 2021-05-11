@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "iSuFunctionGuide"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Function of guiding / iOS 功能引导器"
 
   spec.description  = <<-DESC
