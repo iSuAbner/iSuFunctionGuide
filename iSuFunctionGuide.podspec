@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "Function of guiding / iOS 功能引导器"
 
   spec.description  = <<-DESC
-                               iOS 功能引导器 易于扩展
+                      Function of guiding / iOS 功能引导器
                    DESC
 
   spec.homepage     = "https://github.com/iSuAbner"

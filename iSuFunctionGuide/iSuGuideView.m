@@ -189,7 +189,6 @@
         __weak typeof(self) wSelf = self;
         [wSelf.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //FIXME: 这边是不用加这个weak的吗？
-            __strong typeof(wSelf) self = wSelf;
             if ([obj conformsToProtocol:@protocol(iSuFGViewProtocol)]) {
                 [_guideSubViewArray addObject:obj];
             }
